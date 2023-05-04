@@ -1,0 +1,32 @@
+.navigation{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__nav{
+        flex: 0 0 80%;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+
+    }
+
+    &__link,
+    &__link:hover,
+    &__link:visited
+    {
+        font-size: .8rem;
+        color: rgba($color: black, $alpha: 0.7);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+
+    }
+}

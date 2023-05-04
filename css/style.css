@@ -12,10 +12,61 @@ body {
   font-weight: 400;
   line-height: 1.5; }
 
+.button {
+  padding: 1.25rem 3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  background-color: #3dbe71;
+  color: #fff;
+  border: none;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  position: relative; }
+  .button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in; }
+    .button span:last-child {
+      top: 100%;
+      transform: translate(-50%, 0);
+      opacity: 0; }
+  .button:hover, .button:active {
+    background-color: #5db380; }
+    .button:hover span, .button:active span {
+      opacity: 0; }
+      .button:hover span:last-child, .button:active span:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1; }
+
+.navigation {
+  width: 75%;
+  display: flex;
+  justify-content: space-between; }
+  .navigation__nav {
+    flex: 0 0 80%; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+  .navigation__link, .navigation__link:hover, .navigation__link:visited {
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600; }
+
+.social-nav__list {
+  list-style: none;
+  display: flex; }
+
 .header {
   min-height: 8rem;
   position: relative;
-  background-color: aqua;
   display: flex;
   justify-content: space-around;
   align-items: center; }
@@ -24,26 +75,3 @@ body {
   position: absolute;
   right: 10%;
   top: 2%; }
-
-.navigation {
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
-  background-color: red; }
-
-.navigation__nav {
-  background-color: bisque;
-  flex: 0 0 80%; }
-
-.navigation__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between; }
-
-.social-nav__list {
-  list-style: none;
-  background-color: red;
-  display: flex; }
-
-.button {
-  background-color: brown; }
