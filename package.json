@@ -1,0 +1,21 @@
+{
+  "name": "mercan-software",
+  "version": "1.0.0",
+  "description": "mercansoftware website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "software",
+    "development",
+    "learning",
+    "training"
+  ],
+  "author": "ali yarar",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
